@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 
 class AvailableTimeController extends Controller
 {
-    public function requestTimeSlotsByDay(Request $request, GetAvailabilityTimesWorkflow $getAvailabilityTimesWorkflow)
+    public function requestTimeSlotsByDay(Request $request, GetAvailabilityTimesWorkflow $getAvailabilityTimesWorkflow): \Illuminate\Http\JsonResponse
     {
         Validator::make($request->all(), [
             'providerId' => 'required|integer',
@@ -45,7 +45,7 @@ class AvailableTimeController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Failed to create available time.',
-            ]);
+            ], 400);
         }
 
         return response()->json([

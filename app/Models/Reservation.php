@@ -22,6 +22,14 @@ class Reservation extends Model
         'is_confirmed',
     ];
 
+    protected $visible = [
+        'provider_id',
+        'client_id',
+        'start_time',
+        'end_time',
+        'is_confirmed',
+    ];
+
     protected function casts(): array
     {
         return [
