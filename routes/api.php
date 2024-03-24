@@ -11,5 +11,6 @@ Route::prefix('v1')->group(function () {
    Route::apiResource('/clients', ClientController::class);
    Route::apiResource('/times', AvailableTimeController::class);
    Route::post('times/slots', [AvailableTimeController::class, 'requestTimeSlotsByDay']);
-   Route::apiResource('reservations', ReservationController::class);
+   Route::apiResource('/reservations', ReservationController::class);
+   Route::post('/reservations/confirm', [ReservationController::class, 'confirmReservation']);
 });

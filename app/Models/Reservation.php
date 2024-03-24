@@ -23,6 +23,7 @@ class Reservation extends Model
     ];
 
     protected $visible = [
+        'id',
         'provider_id',
         'client_id',
         'start_time',
