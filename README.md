@@ -1,7 +1,24 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+## Notes
+### Requirements Completed
+- Create a new provider
+- Create a new client
+- Submit available times for reservations
+- Retrieve a list of available reservation slots by day
+- Clients can reserve an appointment slot
+- Allows clients to confirm their reservation
+- Clients must confirm their reservation within 30 minutes
+
+### Requirement Not Completed
+- When time slots are retrieve, there is no logic to check for block times by reservations already created (ran out of time)
+- When creating a reservation there is no logic to check if that time slot is taken (ran out of time)
+- Additional feature to reserve 24 hours in advance (ran out of time)
+
+### Observations
+- Instead of creating roles of (provider/client) for user I created to different tables for Providers and Client to keep it more simple but this would not work properly in a real world scenario.
 ## Installation
-Requirement: Docker
+### Requirements: **Docker**
 
 Step One:
 
