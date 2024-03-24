@@ -22,7 +22,8 @@
 - Usage of Mocks in testing, I was having trouble with this new installation of Laravel 11(was just released) and Mock were not working for me.
 - Due to time constraints, I was not able to add some validation for example if Provider existed and most importantly the logic to check if time slots where taken. I could have made more progress by avoiding testing but I was not willing to make that compromise.
 - I wish I could have written the exercise in .Net but I didn't feel comfortable enough with the time limit.
-- Standardize all response data to contain camelCase rather than snake_case to comply with API standards.
+- Standardize all response data to contain **camelCase** rather than **snake_case** to comply with API standards.
+- In the request `Get Time Slots by Day` I made it a `POST` request it should have been a `GET` but realized it to late.
 
 ### Before Deployment in a real world.
 - Make sure that the logic to determined a time slot is block will have a solid testing suite as is one of the most critical and complex features.
@@ -56,11 +57,14 @@ Step Three:
 ./vendor/bin/sail up -d
 ```
 
-Step Four: (seed db)
+Step Four: run migrations (sorry didn't have time to seed the database)
 
 ```
 ./vendor/bin/sail artisan migrate:fresh
 ```
+
+Step Five: check `http://0.0.0.0:80` to see the laravel starting page, if is different you can check the console right after step three.
+
 ## API Documentation
 
 **-- Get Providers**
