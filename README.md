@@ -65,6 +65,12 @@ Step Four: run migrations (sorry didn't have time to seed the database)
 
 Step Five: check `http://0.0.0.0:80` to see the laravel starting page, if is different you can check the console right after step three.
 
+Step Six: Run testing suite
+```
+./vendor/bin/sail php artisan test
+```
+
+
 ## API Documentation
 
 **-- Get Providers**
