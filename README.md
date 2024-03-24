@@ -152,7 +152,7 @@ Step Four: (seed db)
           ]
         ```
 ---
-**-- Create Clients**
+**-- Create Client**
 ----
 * **URL**
   `api/v1/clients`
@@ -245,30 +245,30 @@ Step Four: (seed db)
               "date": "2024-04-01"
           }
           ```
-          * **Success Response:**
-            * **Code:** 200 <br />
-              **Content:**
-              ```json
-                {
-                    "success": true,
-                    "data": [
-                              [
-                                  {
-                                      "providerId": 1,
-                                      "startTime": "2024-04-01 08:00:00",
-                                      "endTime": "2024-04-01 08:15:00"
-                                  }
-                              ],
-                              [
-                                  {
-                                      "providerId": 1,
-                                      "startTime": "2024-04-01 08:15:00",
-                                      "endTime": "2024-04-01 08:30:00"
-                                  }
-                              ]
-                    ]         
-                }
-              ```
+      * **Success Response:**
+      * **Code:** 200 <br />
+        **Content:**
+        ```json
+          {
+              "success": true,
+              "data": [
+                        [
+                            {
+                                "providerId": 1,
+                                "startTime": "2024-04-01 08:00:00",
+                                "endTime": "2024-04-01 08:15:00"
+                            }
+                        ],
+                        [
+                            {
+                                "providerId": 1,
+                                "startTime": "2024-04-01 08:15:00",
+                                "endTime": "2024-04-01 08:30:00"
+                            }
+                        ]
+              ]         
+          }
+        ```
 
 
 
