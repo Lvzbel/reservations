@@ -11,7 +11,7 @@ class AvailableTimeController extends Controller
 {
     public function store(Request $request, CreateAvailableTimesWorkflow $createAvailableTimesWorkflow): \Illuminate\Http\JsonResponse
     {
-        $validated = Validator::make($request->all(), [
+        Validator::make($request->all(), [
             'providerId' => 'required|integer',
             'startDate' => 'required|date',
             'endDate' => 'required|date',
