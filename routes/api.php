@@ -9,4 +9,5 @@ Route::prefix('v1')->group(function () {
    Route::apiResource('/providers', ProviderController::class);
    Route::apiResource('/clients', ClientController::class);
    Route::apiResource('/times', AvailableTimeController::class);
+   Route::post('times/slots', [AvailableTimeController::class, 'requestTimeSlotsByDay']);
 });
