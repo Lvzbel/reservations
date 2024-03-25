@@ -11,9 +11,9 @@
 - Clients must confirm their reservation within 30 minutes
 
 ### Requirement Not Completed
-- When time slots are retrieve, there is no logic to check for block times by reservations already created (ran out of time)
-- When creating a reservation there is no logic to check if that time slot is taken (ran out of time)
-- Additional feature to reserve 24 hours in advance (ran out of time)
+- When time slots are retrieve, there is no logic to check for block times by reservations already created (I would have query reservations by provider_id and date range and check against my slot builder to make this logic happen )
+- When creating a reservation there is no logic to check if that time slot is taken (I would have query available_times table and check if the reservation was within range, and then query reservations table to check if a reservation was already created with that time slot and provider_id)
+- Additional feature to reserve 24 hours in advance.
 
 ### Observations
 - Instead of creating roles of (provider/client) for user I created to different tables for Providers and Client to keep it more simple but this would not work properly in a real world scenario.
