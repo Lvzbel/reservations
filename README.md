@@ -31,6 +31,35 @@
 - Usage of ORM, I usually prefer to write raw queries but do to time I made heavy use of Laravel's ORM.
 - Offer the ability to retrieve multiple days availability.
 
+### Files Worked On
+```
+    Workflows/Queries/Commands:
+    app/
+    └── Modules/
+    
+    Controllers:
+    app/
+    └── Http/
+        └── Controllers/
+    
+    Models:
+    app/
+    └── Http/
+        └── Models/
+    
+    Routes:
+    routes/
+    
+    Migration and Factories:
+    tests/
+    └── Feature/
+    └── Unit/
+    
+    Migration and Factories:
+    app/
+    └── migrations/
+    └── factories/
+```
 ## Installation
 ### Requirements: **Docker**
 
